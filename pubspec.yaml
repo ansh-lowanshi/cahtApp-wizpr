@@ -1,0 +1,76 @@
+name: chatapp
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: "^3.7.2"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Your runtime dependencies
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.2
+  google_sign_in: ^6.3.0
+  cloud_firestore: ^5.6.6
+  firebase_storage: ^12.4.5
+  firebase_messaging: ^15.2.5
+  cloud_functions: ^5.4.0
+
+  flutter_screenutil: ^5.9.3
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.8
+  dot_navigation_bar: ^1.0.2
+  crystal_navigation_bar: ^1.0.4
+  badges: ^3.1.2
+
+  intl: ^0.20.2
+  shared_preferences: ^2.5.3
+  url_launcher: ^6.3.1
+  image_picker: ^1.1.2
+  permission_handler: ^12.0.0+1
+  phone_state: ^2.1.1
+
+  encrypt: ^5.0.3
+  crypto: ^3.0.6
+  cryptography: ^2.7.0
+  flutter_webrtc: ^0.13.1+hotfix.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # Only here—no duplicates elsewhere
+  flutter_launcher_icons: ^0.14.3
+
+# THIS must be at the same indent level as `dependencies:`:
+flutter_launcher_icons:
+  android: true
+  ios: true
+
+  # your trimmed 450×450 icon file
+  image_path: "assets/icon/app_icon.png"
+
+  # the solid background color you want
+  adaptive_icon_background: "#D5B9DC"
+
+  # your logo PNG again as the foreground
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+
+  # strip alpha out of iOS icons (App Store requirement)
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+
+  # (uncomment if you use assets or fonts)
+  # assets:
+  #   - assets/images/
+  # fonts:
+  #   - family: YourFont
+  #     fonts:
+  #       - asset: fonts/YourFont-Regular.ttf
